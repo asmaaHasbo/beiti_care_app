@@ -27,9 +27,6 @@ class MyApp extends StatelessWidget {
 
 
 
-
-
-
 // bottomNavigationBar: CurvedNavigationBar(
 // index: ShopCubit.get(context).currentindex,
 // onTap: (value) => ShopCubit.get(context).ChangeBottom(value),
