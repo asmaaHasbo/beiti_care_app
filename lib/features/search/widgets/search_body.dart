@@ -13,11 +13,15 @@ class SearchBody extends StatelessWidget {
         padding: const EdgeInsets.only(top: 16.0, right: 20, left: 20 , bottom: 20),
         child: Column(
           children: [
+
             const ScreenName(screenName: 'Search'),
             const SizedBox(height: 16),
+
             CustomSearchDropDown(searchFieldName: 'Service type', hint: 'Select the service',),
             const SizedBox(height: 14),
+
             CustomSearchDropDown(searchFieldName: 'Search range km', hint: 'Select the service',),
+
             const Spacer(flex: 1,),
             const SearchButton(),
           ],
