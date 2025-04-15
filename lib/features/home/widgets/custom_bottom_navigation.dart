@@ -52,10 +52,10 @@ class CustomBottomNavigation extends StatelessWidget {
         ),
       ),
 
-      Padding(
-        padding: const EdgeInsets.only(top: 60, left: 20),
-        child: Image.asset("assets/images/service_listhen_icon.png", width: 30, height: 30),
-      ),
+      // Padding(
+      //   padding: const EdgeInsets.only(top: 60, left: 20),
+      //   child: Image.asset("assets/images/service_listhen_icon.png", width: 30, height: 30),
+      // ),
     ],
   );
   }

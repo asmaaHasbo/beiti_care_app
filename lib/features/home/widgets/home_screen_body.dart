@@ -16,9 +16,9 @@ class HomeScreenBody extends StatefulWidget {
 
 class _HomeScreenBodyState extends State<HomeScreenBody> {
   List<Widget> screens = [
+    const MedicalTestsScreen(),
     const DoctorsScreen(),
     const ServicesScreen(),
-    const MedicalTestsScreen(),
     const SearchScreen(),
     const FailureScreen(),
   ];
