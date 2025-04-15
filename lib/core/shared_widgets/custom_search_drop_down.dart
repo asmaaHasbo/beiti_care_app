@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:searchfield/searchfield.dart';
-
-import '../../features/search/widgets/buildSuggestionListDecoration.dart';
-import '../../features/search/widgets/build_search_input_decoration.dart';
+import 'package:smart_project_test/features/search/widgets/buildSuggestionListDecoration.dart';
+import 'package:smart_project_test/features/search/widgets/build_search_input_decoration.dart';
 
 class CustomSearchDropDown extends StatelessWidget {
   CustomSearchDropDown({

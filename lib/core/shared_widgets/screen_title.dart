@@ -1,14 +1,13 @@
 import 'package:flutter/cupertino.dart';
-
 import 'package:smart_project_test/core/themes/colors.dart';
 
-class ScreenName extends StatelessWidget {
-  const ScreenName({super.key, required this.screenName});
+class ScreenTitle extends StatelessWidget {
+  const ScreenTitle({super.key, required this.screenName});
 
-  final String screenName ;
+  final String screenName;
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       children: [
         const Icon(
           CupertinoIcons.chevron_left_square_fill,

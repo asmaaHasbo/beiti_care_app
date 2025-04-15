@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smart_project_test/features/medical_tests/widgets/search_button.dart';
 
-import '../../../core/shared_widgets/screen_name.dart';
+import 'package:smart_project_test/core/shared_widgets/screen_title.dart';
 
 class FailureScreenBody extends StatelessWidget {
   const FailureScreenBody({super.key});
@@ -15,7 +15,7 @@ class FailureScreenBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            ScreenName(screenName: 'Failure'),
+            ScreenTitle(screenName: 'Failure'),
             Spacer(flex: 1,),
             SizedBox(
               width: 246,

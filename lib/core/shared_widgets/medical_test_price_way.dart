@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:smart_project_test/core/themes/styles.dart';
 
-class MedicalTestPrice extends StatelessWidget {
-  const MedicalTestPrice({
+class MedicalTestPriceWay extends StatelessWidget {
+  const MedicalTestPriceWay({
     super.key,
     required this.nameOfPriceWay,
     required this.testPrice,

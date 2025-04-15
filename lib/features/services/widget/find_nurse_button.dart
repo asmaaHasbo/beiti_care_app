@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_project_test/core/shared_widgets/navigation_function.dart';
-
 import 'package:smart_project_test/core/themes/styles.dart';
-import 'package:smart_project_test/features/search/search_screen.dart';
 
 class FindNurseButton extends StatelessWidget {
   const FindNurseButton({
@@ -21,7 +18,6 @@ class FindNurseButton extends StatelessWidget {
         ),
       ),
       onPressed: () {
-        navigationFunction(context: context, screen: const SearchScreen());
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

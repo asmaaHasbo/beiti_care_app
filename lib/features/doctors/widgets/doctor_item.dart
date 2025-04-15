@@ -5,6 +5,7 @@ import 'package:smart_project_test/core/themes/styles.dart';
 import 'package:smart_project_test/core/shared_widgets/service_price_and_duration.dart';
 
 import 'doctor_img.dart';
+import 'doctor_name.dart';
 import 'list_of_star_icons.dart';
 
 class DoctorItem extends StatelessWidget {
@@ -32,12 +33,7 @@ class DoctorItem extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Ahmed Mohamed',
-                      style: AppStyles.textStyle14?.copyWith(
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
+                    const DoctorName(),
                     const ListOfStarIcons(),
                     const SizedBox(width: 5),
                     const ServicePriceAndDuration(),
@@ -51,11 +47,11 @@ class DoctorItem extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 10,),
+            const SizedBox(height: 10),
             CustomElevatedButton(
               btnName: 'Book Now',
               btnSize: const Size(327, 40),
-              onPressed: (){},
+              onPressed: () {},
             ),
           ],
         ),
@@ -63,3 +59,4 @@ class DoctorItem extends StatelessWidget {
     );
   }
 }
+
