@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:smart_project_test/features/doctors/doctors_screen.dart';
-import 'package:smart_project_test/features/home/home_screen.dart';
-import 'package:smart_project_test/features/services/services_screen.dart';
-
+import 'features/search/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,18 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        textTheme: GoogleFonts.montserratTextTheme(),
-      ),
+      theme: ThemeData(textTheme: GoogleFonts.montserratTextTheme()),
 
-      home: const ServicesScreen()
+      home: const SearchScreen(),
     );
   }
 }
-
-
 
 // bottomNavigationBar: CurvedNavigationBar(
 // index: ShopCubit.get(context).currentindex,
