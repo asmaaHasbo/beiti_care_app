@@ -9,8 +9,11 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      resizeToAvoidBottomInset: false, // ✨ ده اللي يمنع رفع المحتوى فوق الكيبورد
+
       backgroundColor: AppColors.screenBackgroundColor,
       body: SearchBody(),
+
     );
   }
 }

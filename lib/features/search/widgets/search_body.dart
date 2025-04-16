@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:smart_project_test/core/shared_widgets/screen_title.dart';
 import 'package:smart_project_test/features/medical_tests/widgets/search_button.dart';
@@ -8,33 +9,35 @@ class SearchBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Padding(
-        padding: const EdgeInsets.only(
-          top: 16.0,
-          right: 20,
-          left: 20,
-          bottom: 20,
-        ),
-        child: Column(
-          children: [
-            const ScreenTitle(screenName: 'Search'),
-            const SizedBox(height: 16),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+        child: SingleChildScrollView(
 
-            CustomSearchDropDown(
-              searchFieldName: 'Service type',
-              hint: 'Select the service',
+          child: Expanded(
+            child: Column(
+              children: [
+                ScreenTitle(screenName: 'Search'),
+                SizedBox(height: 16),
+
+                CustomSearchDropDown(
+                  searchFieldName: 'Service type',
+                  hint: 'Select the service',
+                ),
+                SizedBox(height: 14),
+
+                CustomSearchDropDown(
+                  searchFieldName: 'Search range km',
+                  hint: 'Select the service',
+                ),
+                SizedBox(height: 220,),
+                Padding(
+                  padding: EdgeInsets.only(top: 16),
+                  child: SearchButton(),
+                ),
+              ],
             ),
-            const SizedBox(height: 14),
-
-            CustomSearchDropDown(
-              searchFieldName: 'Search range km',
-              hint: 'Select the service',
-            ),
-
-            const Spacer(flex: 1),
-            const SearchButton(),
-          ],
+          ),
         ),
       ),
     );
